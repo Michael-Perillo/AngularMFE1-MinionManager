@@ -4,13 +4,13 @@ import { RouterModule } from '@angular/router';
 import { MainMenuComponent } from './main-menu/main-menu.component';
 
 @NgModule({
-  declarations: [MainMenuComponent],
   imports: [
     CommonModule,
     RouterModule.forChild([
       { path: '', redirectTo: 'main-menu', pathMatch: 'full' },
       { path: 'main-menu', component: MainMenuComponent },
     ]),
+    MainMenuComponent,
   ],
 })
 export class ViewsModule {}
