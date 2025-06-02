@@ -5,8 +5,10 @@ import { AppModule } from './app.module';
 
 describe('AppModule', () => {
   it('should create the AppModule', () => {
-    expect(() => TestBed.configureTestingModule({
-      imports: [AppModule],
-    }).compileComponents()).not.toThrow();
+    expect(() =>
+      TestBed.configureTestingModule({
+        imports: [AppModule],
+      }).compileComponents()
+    ).not.toThrow();
   });
 });
