@@ -1,11 +1,9 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.html',
   styleUrl: './app.scss',
-  standalone: false
 })
 // eslint-disable-next-line @angular-eslint/component-class-suffix
 export class App {
