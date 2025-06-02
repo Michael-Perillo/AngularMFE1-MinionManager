@@ -5,7 +5,7 @@ module.exports = withModuleFederationPlugin({
   name: 'app',
 
   exposes: {
-    './Component': './src/app/app.ts',
+    './ViewsModule': './src/app/views/views.module.ts',
   },
 
   shared: {
