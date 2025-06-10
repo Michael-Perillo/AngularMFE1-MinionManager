@@ -84,6 +84,6 @@ jobs:
     - name: Deploy to GitHub Pages using angular-cli-ghpages
       run: |
         npm install
-        npm run ng -- deploy --base-href=/AngularMFE1-MinionManager/ --repo=https://github.com/Michael-Perillo/AngularMFE1-MinionManager.git --name=\"Michael-Perillo\" --email=michael@perillo.me
+        npm run ng -- deploy --dir=dist/app --base-href=/AngularMFE1-MinionManager/ --repo=https://github.com/Michael-Perillo/AngularMFE1-MinionManager.git --name=\"Michael-Perillo\" --email=michael@perillo.me
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # angular-cli-ghpages uses this to push
