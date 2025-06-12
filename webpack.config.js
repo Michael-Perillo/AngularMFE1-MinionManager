@@ -2,7 +2,7 @@ const { shareAll, withModuleFederationPlugin } = require('@angular-architects/mo
 
 module.exports = {
   ...withModuleFederationPlugin({
-    name: 'app',
+    name: 'mfe1',
     exposes: {
       './ViewsModule': './src/app/views/views.module.ts',
     },
