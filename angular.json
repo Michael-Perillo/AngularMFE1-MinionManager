@@ -59,7 +59,13 @@
 						"development": {
 							"optimization": false,
 							"extractLicenses": false,
-							"sourceMap": true
+							"sourceMap": true,
+              "fileReplacements": [
+                {
+                  "replace": "src/app/shared/constants/prod/constants.ts",
+                  "with": "src/app/shared/constants/local/constants.ts"
+                }
+              ]
 						}
 					},
 					"defaultConfiguration": "production"
