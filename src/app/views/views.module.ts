@@ -7,7 +7,7 @@ import { MainMenuComponent } from './main-menu/main-menu.component';
   imports: [
     CommonModule,
     RouterModule.forChild([
-      { path: '', redirectTo: 'main-menu', pathMatch: 'full' },
+      { path: '**', redirectTo: 'main-menu', pathMatch: 'full' },
       { path: 'main-menu', component: MainMenuComponent },
     ]),
     MainMenuComponent,
